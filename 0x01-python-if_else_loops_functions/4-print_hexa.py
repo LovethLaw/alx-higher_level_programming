@@ -1,5 +1,3 @@
 #!/usr/bin/python3
-# Author = lawrence loveth
-"""print numbers 0 to 98 in decimal and hexadecimal."""
-for number in range(0, 99):
-    print("{} = {}",format(number, hex(number)))
+for numbers in range(99):
+    print("{:d} = {}".format(numbers, hex(numbers)))
