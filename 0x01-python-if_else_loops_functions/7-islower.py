@@ -1,8 +1,6 @@
 #!/usr/bin/python3
-# Author - lawrence loveth
-def islower(c0:
-        """function checks for lowercaser characters,"""
-        if ord(c) >= 97 and ord(c) <= 122:
-        return true
-        else:
-        return false
+def islower(c):
+    if ord(c) >= 97 and ord(c) <= 122:
+        return True
+    else:
+        return (False)
