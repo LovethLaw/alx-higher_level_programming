@@ -1,0 +1,30 @@
+>>> indent = __import__("5-text_indentation").text_indentation
+>>> text = "Hello I am Genius Excel.\
+...         I love programming so much.\
+...         May I know your name plase?\
+...         There are two things I like: Programming and girls.\
+...         "
+>>> indent(text)
+Hello I am Genius Excel.
+
+            I love programming so much.
+
+            May I know your name plase?
+
+            There are two things I like:
+
+ Programming and girls.
+
+            >>> 
+>>> indent("Alright. Shall we test this?")
+Alright.
+
+ Shall we test this?
+
+>>> indent(89)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/root/alx-higher_level_programming/0x07-python-test_driven_development/5-text_indentation.py", line 17, in text_indentation
+    raise TypeError("text must be a string")
+TypeError: text must be a string
+>>> 
