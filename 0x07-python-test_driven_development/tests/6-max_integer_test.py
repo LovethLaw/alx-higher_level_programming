@@ -37,4 +37,7 @@ class TextMaxInteger(unittest.TestCase):
 
     def test_assertionerror(self):
         self.assertRaises(TypeError, max_integer('e'))
+        
 
+if __name__ == "__main__":
+    unittest.main()
