@@ -1,0 +1,32 @@
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("my_int", 12)
+>>> bg.integer_validator("width", 89)
+>>> bg.integer_validator("name", "John")
+Traceback (most recent call last):
+  File "/root/alx-higher_level_programming/0x0A-python-inheritance/7-base_geometry.py", line 23, in <module>
+    bg.integer_validator("name", "John")
+  File "/root/alx-higher_level_programming/0x0A-python-inheritance/7-base_geometry.py", line 17, in integer_validator
+    raise TypeError(f"{name} must be an integer")
+TypeError: name must be an integer
+>>> bg.integer_validator("age", 0)
+Traceback (most recent call last):
+  File "/root/alx-higher_level_programming/0x0A-python-inheritance/7-base_geometry.py", line 23, in <module>
+    bg.integer_validator("age", 0)
+  File "/root/alx-higher_level_programming/0x0A-python-inheritance/7-base_geometry.py", line 19, in integer_validator
+    raise ValueError(f"{name} must be greater than 0")
+ValueError: age must be greater than 0
+>>> bg.integer_validator("age", -4)
+Traceback (most recent call last):
+  File "/root/alx-higher_level_programming/0x0A-python-inheritance/7-base_geometry.py", line 23, in <module>
+    bg.integer_validator("age", -4)
+  File "/root/alx-higher_level_programming/0x0A-python-inheritance/7-base_geometry.py", line 19, in integer_validator
+    raise ValueError(f"{name} must be greater than 0")
+ValueError: age must be greater than 0
+>>> bg.integer_validator("age", True)
+Traceback (most recent call last):
+  File "/root/alx-higher_level_programming/0x0A-python-inheritance/7-base_geometry.py", line 27, in <module>
+    bg.integer_validator("age", True)
+  File "/root/alx-higher_level_programming/0x0A-python-inheritance/7-base_geometry.py", line 19, in integer_validator
+    raise TypeError(f"{name} must be an integer")
+TypeError: age must be an integer
