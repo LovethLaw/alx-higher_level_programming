@@ -39,6 +39,7 @@ class Square(Rectangle):
 
     @size.setter
     def size(self, value):
+        """Get the size returned"""
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         elif value <= 0:
