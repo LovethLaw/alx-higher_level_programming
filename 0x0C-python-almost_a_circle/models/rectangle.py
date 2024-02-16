@@ -224,7 +224,7 @@ class Rectangle(Base):
                 setattr(self, key, kwargs[key])
 
     def to_dictionary(self):
-        """conversts a json string to a dict"""
+        """conversts a json string to a python dictionary"""
         new_dict = dict()
         for key, value in self.__dict__.items():
             if key.startswith("_Rectangle__"):
